@@ -1,0 +1,79 @@
+node -v
+
+npm init -y 
+
+npm i typescript
+
+npm i ts-node-dev
+
+npm i -D @types/node
+
+npm i --save-dev tsconfig-paths
+
+tsc --init
+
+npm i
+
+npm i express
+
+npm i cors
+
+npm i express-async-errors --force
+
+npm i -D @types/express --force
+
+npm i -D @types/cors --force
+
+npm i typeorm@0.2.45 --force
+
+npm i reflect-metadata pg --force
+
+docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+npm run typeorm migration:run
+
+npm run typeorm migration:create -- -n CreateProducts
+
+npm run typeorm migration:run
+
+npm i express@4.18.2 --force
+
+npm i celebrate
+
+npm i -D @types/joi
+
+npm run typeorm migration:create -- -n CreateUsers
+
+npm i bcryptjs
+
+npm i -D @types/bcryptjs
+
+npm i jsonwebtoken
+npm i -D @types/jsonwebtoken
+
+npm i multer
+npm i -D @types/multer
+
+npm run typeorm migrations:create -- -n CreateUserTokens
+npm run typeorm migrations:run
+
+npm i date-fns
+
+npm i nodemailer
+npm i -D @types/nodemailer
+
+npm i handlebars
+
+npm run typeorm migration:create -- -n CreateCustomers
+npm run typeorm migrations:run
+
+npm run typeorm migrations:create -- -n CreateOrders
+
+npm run typeorm migrations:create -- -n AddCustomerIdToOrders
+
+npm run typeorm migrations:create -- -n CreateOrdersProducts
+
+npm run typeorm migrations:create -- -n AddOrderIdToOrdersProducts
+
+npm run typeorm migrations:create -- -n AddProductIdToOrdersProduct
+

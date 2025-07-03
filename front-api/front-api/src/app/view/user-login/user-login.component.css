@@ -1,0 +1,51 @@
+form {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-error {
+  font-size: 0.75rem;
+  color: #e53935;
+}
+
+button[type="submit"] {
+  align-self: flex-end;
+  padding: 0.5rem 2rem;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #1976d2;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 1.2rem;
+    box-shadow: none;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    align-self: stretch;
+  }
+}
